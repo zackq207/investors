@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>redeyezack & friends — One-Pager</title>
+<meta name="description" content="redeyezack & friends — a transnational live performance project. Story, proof points, route, and how to get involved as a promoter or backer.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800;900&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+
+<style>
+  :root {
+    --bg: #faf8f5;
+    --surface: #ffffff;
+    --surface-2: #f1ece5;
+    --border: #e4dcd1;
+    --text: #1c1917;
+    --text-muted: #756a5e;
+    --accent: #c73118;
+    --accent-ink: #ffffff;
+    --accent-soft: #a56a1f;
+    --route-line: #d8cabb;
+    --font-display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+    --font-body: "Public Sans", "Helvetica Neue", Arial, sans-serif;
+    --font-mono: "IBM Plex Mono", "SF Mono", Consolas, monospace;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0f0e0c;
+      --surface: #18160f;
+      --surface-2: #201d16;
+      --border: #322c22;
+      --text: #f3efe7;
+      --text-muted: #a89d8d;
+      --accent: #ff5334;
+      --accent-ink: #140a06;
+      --accent-soft: #e0a94a;
+      --route-line: #3a3327;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #0f0e0c;
+    --surface: #18160f;
+    --surface-2: #201d16;
+    --border: #322c22;
+    --text: #f3efe7;
+    --text-muted: #a89d8d;
+    --accent: #ff5334;
+    --accent-ink: #140a06;
+    --accent-soft: #e0a94a;
+    --route-line: #3a3327;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    background: var(--bg);
+    color: var(--text);
+  }
+
+  body {
+    font-family: var(--font-body);
+    margin: 0;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 3.5rem 1.75rem 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  /* ---------- Header ---------- */
+
+  .masthead {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 2rem;
+  }
+
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+  }
+
+  .wordmark {
+    font-family: var(--font-display);
+    font-weight: 900;
+    font-size: clamp(2.2rem, 6vw, 3.6rem);
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+    margin: 0;
+    line-height: 0.98;
+  }
+
+  .wordmark span { color: var(--accent); }
+
+  .tagline {
+    font-size: 1.15rem;
+    color: var(--text-muted);
+    max-width: 46ch;
+    margin: 0;
+  }
+
+  .country-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .country-chip {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 0.32rem 0.65rem;
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    color: var(--text-muted);
+  }
+
+  .status-line {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--accent-soft);
+    margin-top: 0.25rem;
+  }
+
+  /* ---------- Section shell ---------- */
+
+  section { display: flex; flex-direction: column; gap: 1.1rem; }
+
+  h2 {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 1.5rem;
+    letter-spacing: -0.01em;
+    margin: 0;
+    text-wrap: balance;
+  }
+
+  .section-num {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    letter-spacing: 0.1em;
+  }
+
+  p { margin: 0; }
+  .lede { font-size: 1.02rem; color: var(--text); max-width: 68ch; }
+  .lede + p { color: var(--text-muted); max-width: 68ch; margin-top: -0.5rem; }
+
+  /* ---------- Proof stats ---------- */
+
+  .stat-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .stat {
+    background: var(--surface);
+    padding: 1.1rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  .stat-value {
+    font-family: var(--font-display);
+    font-weight: 900;
+    font-size: 1.9rem;
+    color: var(--accent);
+    line-height: 1;
+  }
+
+  .stat-label {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+  }
+
+  .proof-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.25rem;
+  }
+
+  .proof-item {
+    display: grid;
+    grid-template-columns: 9ch 1fr;
+    gap: 0.9rem;
+    font-size: 0.94rem;
+    align-items: baseline;
+  }
+
+  .proof-item .where {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--accent-soft);
+  }
+
+  /* ---------- Route timeline ---------- */
+
+  .route-scroll {
+    overflow-x: auto;
+    margin: 0 -1.75rem;
+    padding: 0 1.75rem 0.5rem;
+  }
+
+  .route-track {
+    display: flex;
+    gap: 0;
+    min-width: max-content;
+    position: relative;
+    padding-top: 1.6rem;
+  }
+
+  .route-track::before {
+    content: "";
+    position: absolute;
+    top: 0.5rem;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--route-line);
+  }
+
+  .route-stop {
+    width: 190px;
+    padding: 0 1.1rem 0 0;
+    position: relative;
+    flex-shrink: 0;
+  }
+
+  .route-stop::before {
+    content: "";
+    position: absolute;
+    top: -1.1rem;
+    left: 0;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--accent);
+  }
+
+  .route-when {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--accent-soft);
+    display: block;
+    margin-bottom: 0.35rem;
+  }
+
+  .route-city {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 1.05rem;
+    display: block;
+    margin-bottom: 0.35rem;
+  }
+
+  .route-why {
+    font-size: 0.84rem;
+    color: var(--text-muted);
+    line-height: 1.45;
+  }
+
+  /* ---------- Catalogue ---------- */
+
+  .genre-row { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+
+  .genre-tag {
+    font-size: 0.78rem;
+    padding: 0.3rem 0.75rem;
+    border-radius: 999px;
+    background: var(--surface-2);
+    color: var(--text);
+    border: 1px solid var(--border);
+  }
+
+  /* ---------- Set details ---------- */
+
+  .set-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.25rem;
+  }
+
+  .set-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 1.1rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .set-card h3 {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin: 0;
+    font-weight: 500;
+  }
+
+  .set-card ul {
+    margin: 0;
+    padding-left: 1.1rem;
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  /* ---------- The ask ---------- */
+
+  .ask-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  .ask-card {
+    background: var(--surface);
+    padding: 1.5rem 1.5rem 1.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+
+  .ask-card.accent { background: var(--accent); color: var(--accent-ink); }
+  .ask-card.accent .ask-title,
+  .ask-card.accent p,
+  .ask-card.accent .contact-line { color: var(--accent-ink); }
+  .ask-card.accent .contact-line a { color: var(--accent-ink); text-decoration-color: color-mix(in srgb, var(--accent-ink) 50%, transparent); }
+
+  .ask-title {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 1.15rem;
+  }
+
+  .ask-card p { font-size: 0.92rem; color: var(--text-muted); }
+
+  .contact-line {
+    font-family: var(--font-mono);
+    font-size: 0.86rem;
+    margin-top: 0.3rem;
+  }
+
+  .contact-line a { color: var(--text); text-decoration-color: var(--border); }
+
+  /* ---------- Footer ---------- */
+
+  footer {
+    border-top: 1px solid var(--border);
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    font-size: 0.82rem;
+    color: var(--text-muted);
+  }
+
+  footer .socials { display: flex; gap: 1rem; font-family: var(--font-mono); font-size: 0.75rem; }
+  footer a { color: var(--text-muted); }
+
+  a { color: var(--accent); text-decoration: underline; text-decoration-color: var(--border); text-underline-offset: 3px; }
+  a:hover { text-decoration-color: currentColor; }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  @media (max-width: 560px) {
+    .proof-item { grid-template-columns: 1fr; gap: 0.15rem; }
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <header class="masthead">
+    <span class="eyebrow">One-pager · 2026</span>
+    <h1 class="wordmark">redeye<span>zack</span> &amp; friends</h1>
+    <p class="tagline">A transnational live performance project — narrative-driven acoustic sets, built by moving continuously across five countries rather than staying put.</p>
+    <div class="country-strip">
+      <span class="country-chip">India</span>
+      <span class="country-chip">Morocco</span>
+      <span class="country-chip">Turkey</span>
+      <span class="country-chip">United Kingdom</span>
+      <span class="country-chip">Europe</span>
+    </div>
+    <span class="status-line">Currently halfway through a self-funded, self-booked 12-month tour — the "World Seeding Tour."</span>
+  </header>
+
+  <section>
+    <span class="section-num">01 — The story</span>
+    <h2>Started as busking. Became a way of writing.</h2>
+    <p class="lede">RedEyeZack — Zack Qureshi — began performing on the streets of London, taken on as a deliberate challenge to break years of stage fright. The journey that followed, through Barcelona, Istanbul and India, pushed his songwriting toward something more evocative and philosophical. <strong>redeyezack &amp; friends</strong> is what that journey became: not a fixed band, but a fluid live identity — solo, duo, or full collaborative "friends" configuration — shaped by whoever and wherever it meets next.</p>
+  </section>
+
+  <section>
+    <span class="section-num">02 — Proof, not promises</span>
+    <h2>Road-tested across four continents.</h2>
+    <div class="stat-row">
+      <div class="stat"><span class="stat-value">5</span><span class="stat-label">countries toured this cycle</span></div>
+      <div class="stat"><span class="stat-value">30+</span><span class="stat-label">original songs, catalogued &amp; released</span></div>
+      <div class="stat"><span class="stat-value">20+</span><span class="stat-label">local musicians joined one Istanbul jam</span></div>
+    </div>
+    <div class="proof-list">
+      <div class="proof-item"><span class="where">Morocco</span><span>Red Sands International Folklore Festival, Safi — plus live sets across Essaouira and Marrakesh</span></div>
+      <div class="proof-item"><span class="where">Turkey</span><span>Kadıköy &amp; Beyoğlu underground circuit, Istanbul — jam session at Ortak Studyo drew 20+ local musicians</span></div>
+      <div class="proof-item"><span class="where">Italy</span><span>Live performance at the Sunset Gong Ceremony, Kalura Beach, Porto Cesareo</span></div>
+      <div class="proof-item"><span class="where">India</span><span>Goa's Arambol/Anjuna scene, plus underground circuits in Mumbai and Pune</span></div>
+      <div class="proof-item"><span class="where">UK</span><span>Brighton's collective and open-mic circuit, guest sets with local bands</span></div>
+    </div>
+  </section>
+
+  <section>
+    <span class="section-num">03 — The route</span>
+    <h2>Timed to the seasons, not to opportunity.</h2>
+    <p class="lede">The tour follows the warm-weather corridor city to city — moving through cooler cities in high summer, saving the hottest climates for their comfortable months. That's routing logic, not just a travel itinerary.</p>
+    <div class="route-scroll">
+      <div class="route-track">
+        <div class="route-stop">
+          <span class="route-when">Early summer</span>
+          <span class="route-city">Istanbul</span>
+          <span class="route-why">Warm and dry for the Kadıköy/Beyoğlu circuit, before July–August peak heat.</span>
+        </div>
+        <div class="route-stop">
+          <span class="route-when">Midsummer</span>
+          <span class="route-city">Brighton, UK</span>
+          <span class="route-why">The open-mic and collective scene peaks exactly when southern Europe turns uncomfortable.</span>
+        </div>
+        <div class="route-stop">
+          <span class="route-when">Late summer</span>
+          <span class="route-city">Tangier &amp; Granada</span>
+          <span class="route-why">Tangier's Atlantic coast stays under 30°C in summer, unlike interior Morocco. Granada runs hotter — evening/sunset slots.</span>
+        </div>
+        <div class="route-stop">
+          <span class="route-when">August</span>
+          <span class="route-city">Barcelona</span>
+          <span class="route-why">Coastal breeze keeps peak Mediterranean festival season manageable.</span>
+        </div>
+        <div class="route-stop">
+          <span class="route-when">August</span>
+          <span class="route-city">Bari, Italy</span>
+          <span class="route-why">Coastal Puglia beach performances, scheduled late afternoon into sunset.</span>
+        </div>
+        <div class="route-stop">
+          <span class="route-when">Mid-September</span>
+          <span class="route-city">Back to India</span>
+          <span class="route-why">Timed to the monsoon clearing in Goa/Mumbai — setting up the Nov–Feb stretch.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <span class="section-num">04 — The sound</span>
+    <h2>Hypnotic guitar. Poetic, transcultural songwriting.</h2>
+    <div class="genre-row">
+      <span class="genre-tag">Folk</span>
+      <span class="genre-tag">Indie</span>
+      <span class="genre-tag">World</span>
+      <span class="genre-tag">Acoustic</span>
+    </div>
+    <p class="lede">A 30+ song catalogue spanning sketches, demos, live sessions and studio releases — including "The Purpose of Existence," the first in a planned trilogy written across Barcelona and Mumbai. Not another covers act: collaborations with traditional and ethnic instrumentalists and percussionists shape a sound built to connect with any audience, anywhere.</p>
+  </section>
+
+  <section>
+    <span class="section-num">05 — Live set</span>
+    <h2>Simple to book. Flexible to fit.</h2>
+    <div class="set-grid">
+      <div class="set-card">
+        <h3>Format</h3>
+        <ul><li>Solo (guitar &amp; vocals)</li><li>Duo / trio</li><li>Full "friends" collective</li></ul>
+      </div>
+      <div class="set-card">
+        <h3>Set details</h3>
+        <ul><li>45–90 minute sets</li><li>Originals + 60s–90s classics on request</li><li>Acoustic or electric guitar</li></ul>
+      </div>
+      <div class="set-card">
+        <h3>Tech rider</h3>
+        <ul><li>1 vocal mic</li><li>1 DI for guitar</li><li>Monitor wedge — solo sets need no extra crew or backline</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <span class="section-num">06 — Get involved</span>
+    <h2>Two ways in.</h2>
+    <div class="ask-grid">
+      <div class="ask-card accent">
+        <span class="ask-title">For promoters &amp; venues</span>
+        <p>Festivals, venues, house concerts, weddings, corporate events, collaborations. Based in the UK, open to international invitations.</p>
+        <span class="contact-line"><a href="mailto:redeyezack@protonmail.com">redeyezack@protonmail.com</a></span>
+        <span class="contact-line">WhatsApp: +44 7845 450242</span>
+      </div>
+      <div class="ask-card">
+        <span class="ask-title">For sponsors &amp; backers</span>
+        <p>This is a grassroots, independently-funded tour. Open to sponsors and investors to support travel, production, and local collaborations along the way.</p>
+        <span class="contact-line"><a href="mailto:redeyezack@protonmail.com">redeyezack@protonmail.com</a></span>
+        <span class="contact-line"><a href="https://www.redeyezack.co.uk" target="_blank" rel="noopener">redeyezack.co.uk</a></span>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>PLJ — Peace, Love &amp; Joy · Zack aka RedEyeZack</span>
+    <span class="socials">
+      <a href="https://instagram.com/redeyezack" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.facebook.com/RedEyeZack" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://redeyezack.bandcamp.com" target="_blank" rel="noopener">Bandcamp</a>
+    </span>
+  </footer>
+
+</div>
+</body>
+</html>
