@@ -5,6 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>redeyezack & friends — One-Pager</title>
 <meta name="description" content="redeyezack & friends — a transnational live performance project. Story, proof points, route, and how to get involved as a promoter or backer.">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="redeyezack & friends">
+<meta property="og:description" content="A transnational live performance project — five hubs done, three more mapped through mid-November. Story, proof points, route, and how to get involved.">
+<meta property="og:url" content="https://investors.redeyezack.co.uk/">
+<meta property="og:image" content="https://investors.redeyezack.co.uk/hero_portrait.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="redeyezack & friends">
+<meta name="twitter:description" content="A transnational live performance project — five hubs done, three more mapped through mid-November.">
+<meta name="twitter:image" content="https://investors.redeyezack.co.uk/hero_portrait.jpg">
+
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800;900&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
 
 <style>
@@ -141,6 +152,40 @@
 
   section { display: flex; flex-direction: column; gap: 1.1rem; }
 
+  .story-grid {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 2rem;
+    align-items: start;
+  }
+
+  .portrait {
+    margin: 0;
+    width: 148px;
+    flex-shrink: 0;
+  }
+
+  .portrait img {
+    width: 100%;
+    display: block;
+    border-radius: 4px;
+  }
+
+  .portrait figcaption {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-weight: 800;
+    font-size: 0.95rem;
+    color: var(--text);
+    margin-top: 0.6rem;
+    text-align: center;
+  }
+
+  @media (max-width: 600px) {
+    .story-grid { grid-template-columns: 1fr; }
+    .portrait { width: 120px; margin: 0 auto; }
+  }
+
   h2 {
     font-family: var(--font-display);
     font-weight: 800;
@@ -155,6 +200,12 @@
     font-size: 0.72rem;
     color: var(--text-muted);
     letter-spacing: 0.1em;
+  }
+
+  .press-quote {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: var(--accent-soft);
   }
 
   p { margin: 0; }
@@ -369,6 +420,16 @@
 
   .ask-card p { font-size: 0.92rem; color: var(--text-muted); }
 
+  .funding-list {
+    margin: 0;
+    padding-left: 1.1rem;
+    font-size: 0.88rem;
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
   .contact-line {
     font-family: var(--font-mono);
     font-size: 0.86rem;
@@ -413,18 +474,25 @@
     <p class="tagline">A transnational live performance project — narrative-driven acoustic sets, built by moving continuously across five countries rather than staying put.</p>
     <div class="country-strip">
       <span class="country-chip">India</span>
+      <span class="country-chip">UK</span>
       <span class="country-chip">Morocco</span>
       <span class="country-chip">Turkey</span>
-      <span class="country-chip">United Kingdom</span>
-      <span class="country-chip">Europe</span>
+      <span class="country-chip">Italy</span>
     </div>
-    <span class="status-line">Currently halfway through a self-funded, self-booked 12-month tour — the "World Seeding Tour."</span>
+    <span class="status-line">Currently 9 months into a self-funded, self-booked 12-month tour — the "World Seeding Tour."</span>
   </header>
 
-  <section>
+  <section class="story-section">
     <span class="section-num">01 — The story</span>
+    <span class="press-quote">"A compelling live performer." — press</span>
     <h2>Started as busking. Became a way of writing.</h2>
-    <p class="lede">RedEyeZack — Zack Qureshi — began performing on the streets of London, taken on as a deliberate challenge to break years of stage fright. The journey that followed, through Barcelona, Istanbul and India, pushed his songwriting toward something more evocative and philosophical. <strong>redeyezack &amp; friends</strong> is what that journey became: not a fixed band, but a fluid live identity — solo, duo, or full collaborative "friends" configuration — shaped by whoever and wherever it meets next.</p>
+    <div class="story-grid">
+      <p class="lede">RedEyeZack — Zack Qureshi — began performing on the streets of London, taken on as a deliberate challenge to break years of stage fright. The journey that followed, through Barcelona, Istanbul and India, pushed his songwriting toward something more evocative and philosophical. <strong>redeyezack &amp; friends</strong> is what that journey became: not a fixed band, but a fluid live identity — solo, duo, or full collaborative "friends" configuration — shaped by whoever and wherever it meets next.</p>
+      <figure class="portrait">
+        <img src="hero_portrait.jpg" alt="RedEyeZack (Zack Qureshi) portrait">
+        <figcaption>"Music is REAL Magic."</figcaption>
+      </figure>
+    </div>
   </section>
 
   <section>
@@ -436,49 +504,59 @@
       <div class="stat"><span class="stat-value">20+</span><span class="stat-label">local musicians joined one Istanbul jam</span></div>
     </div>
     <div class="proof-list">
-      <div class="proof-item"><span class="where">Morocco</span><span>Red Sands International Folklore Festival, Safi — plus live sets across Essaouira and Marrakesh</span></div>
+      <div class="proof-item"><span class="where">Morocco</span><span>Red Sands International Folklore Festival, Safi — plus a live collaboration with DJ Mask Off in Essaouira, and sets in Marrakesh</span></div>
       <div class="proof-item"><span class="where">Turkey</span><span>Kadıköy &amp; Beyoğlu underground circuit, Istanbul — jam session at Ortak Studyo drew 20+ local musicians, with <a href="https://www.instagram.com/p/DZqDvTijkMU/" target="_blank" rel="noopener">the collaboration clip</a> now past <strong>10K views on Instagram</strong></span></div>
       <div class="proof-item"><span class="where">Italy</span><span>Live performance at the Sunset Gong Ceremony, Kalura Beach, Porto Cesareo</span></div>
-      <div class="proof-item"><span class="where">India</span><span>Goa's Arambol/Anjuna scene, plus underground circuits in Mumbai and Pune</span></div>
+      <div class="proof-item"><span class="where">India</span><span>Goa's Arambol/Anjuna scene — gigs at Garden Of Dreams, This Is It, and The Spice Oven (to a UK ex-pat crowd) — plus Mumbai collaborations, a Musicians Den Studio jam with Jay Nikam in Pune, and a last-minute 4-piece gig at The Shisha Cafe with Jay, Vineesh &amp; Ojas</span></div>
       <div class="proof-item"><span class="where">UK</span><span>Brighton's collective and open-mic circuit, guest sets with local bands</span></div>
     </div>
   </section>
 
   <section>
     <span class="section-num">03 — The route</span>
-    <h2>Timed to the seasons, not to opportunity.</h2>
-    <p class="lede">The tour follows the warm-weather corridor city to city — moving through cooler cities in high summer, saving the hottest climates for their comfortable months. That's routing logic, not just a travel itinerary.</p>
+    <h2>Five hubs done. The rest is being re-strategised.</h2>
+    <p class="lede">Each stop is a multi-city hub, not a single gig. With studio production now underway, the remaining European leg is tentative while focus shifts to finishing the repertoire first.</p>
     <div class="route-scroll">
       <div class="route-track">
         <div class="route-stop">
-          <span class="route-when">Early summer</span>
-          <span class="route-city">Istanbul</span>
-          <span class="route-why">Warm and dry for the Kadıköy/Beyoğlu circuit, before July–August peak heat.</span>
+          <span class="route-when">✓ Done</span>
+          <span class="route-city">India (Mumbai hub)</span>
+          <span class="route-why">Including Goa's Arambol/Anjuna scene, plus collaborations in Mumbai and Pune.</span>
         </div>
         <div class="route-stop">
-          <span class="route-when">Midsummer</span>
-          <span class="route-city">Brighton, UK</span>
-          <span class="route-why">The open-mic and collective scene peaks exactly when southern Europe turns uncomfortable.</span>
+          <span class="route-when">✓ Done — Mar 2026</span>
+          <span class="route-city">Morocco (Safi hub)</span>
+          <span class="route-why">Red Sands International Folklore Festival, a live collaboration with DJ Mask Off in Essaouira, plus sets in Marrakesh.</span>
         </div>
         <div class="route-stop">
-          <span class="route-when">Late summer</span>
-          <span class="route-city">Tangier &amp; Granada</span>
-          <span class="route-why">Tangier's Atlantic coast stays under 30°C in summer, unlike interior Morocco. Granada runs hotter — evening/sunset slots.</span>
+          <span class="route-when">✓ Done — Apr 2026</span>
+          <span class="route-city">UK (Brighton hub)</span>
+          <span class="route-why">Open-mic and collective circuit — the constant home base throughout.</span>
         </div>
         <div class="route-stop">
-          <span class="route-when">August</span>
-          <span class="route-city">Barcelona</span>
-          <span class="route-why">Coastal breeze keeps peak Mediterranean festival season manageable.</span>
+          <span class="route-when">✓ Done — May 2026</span>
+          <span class="route-city">Turkey (Istanbul hub)</span>
+          <span class="route-why">Kadıköy/Beyoğlu circuit, plus acoustic sessions in Dalyan and Erikli — the Ortak Studyo jam drew 20+ local musicians.</span>
         </div>
         <div class="route-stop">
-          <span class="route-when">August</span>
-          <span class="route-city">Bari, Italy</span>
-          <span class="route-why">Coastal Puglia beach performances, scheduled late afternoon into sunset.</span>
+          <span class="route-when">✓ Done — Aug 2026</span>
+          <span class="route-city">Italy (Porto Cesareo hub)</span>
+          <span class="route-why">Sunset Gong Ceremony at Kalura Beach, plus stops in Trepuzzi and Castro along the Puglia coast.</span>
         </div>
         <div class="route-stop">
-          <span class="route-when">Mid-September</span>
+          <span class="route-when">Tentative</span>
+          <span class="route-city">Tangier, Morocco</span>
+          <span class="route-why">Atlantic coast stays under 30°C even at peak summer — unlike interior Morocco.</span>
+        </div>
+        <div class="route-stop">
+          <span class="route-when">Tentative</span>
+          <span class="route-city">Barcelona &amp; Granada, Spain</span>
+          <span class="route-why">Still on the map — timing depends on how the studio session schedule lands.</span>
+        </div>
+        <div class="route-stop">
+          <span class="route-when">Target — mid-Nov</span>
           <span class="route-city">Back to India</span>
-          <span class="route-why">Timed to the monsoon clearing in Goa/Mumbai — setting up the Nov–Feb stretch.</span>
+          <span class="route-why">Timed to land just as the post-monsoon live circuit reopens in Goa/Mumbai.</span>
         </div>
       </div>
     </div>
@@ -493,7 +571,7 @@
       <span class="genre-tag">World</span>
       <span class="genre-tag">Acoustic</span>
     </div>
-    <p class="lede">A 30-song repertoire: 20 (Sketches &amp; Demos) already written, with 10 (Works In Progress) currently moving through the recording and production funnel — "Secret Garden" and "Flying Free" are next up for full release. First single already out: "The Purpose Of Existence," first in a planned trilogy written across Barcelona and Mumbai. Not another covers act: collaborations with traditional and ethnic instrumentalists and percussionists shape a sound built to connect with any audience, anywhere.</p>
+    <p class="lede">A 30-song repertoire: 20 (Sketches &amp; Demos) already written, with 10 (Works In Progress) moving into full production with a UK producer now on board. "Secret Garden" releases <strong>October 16</strong>, with "Flying Free" following in <strong>December</strong>. First single already out: "The Purpose Of Existence," first in a planned trilogy written across Barcelona and Mumbai. Not another covers act: collaborations with traditional and ethnic instrumentalists and percussionists shape a sound built to connect with any audience, anywhere.</p>
     <span class="contact-line">▶ <a href="https://www.youtube.com/playlist?list=PLs7n3ZrG858udgP5Ijplv2kA_Lodf2w2X" target="_blank" rel="noopener">Listen to the full "Acoustic Clips" playlist on YouTube</a></span>
   </section>
 
@@ -522,13 +600,19 @@
     <div class="ask-grid">
       <div class="ask-card accent">
         <span class="ask-title">For promoters &amp; venues</span>
-        <p>Festivals, venues, house concerts, weddings, corporate events, collaborations. Based in the UK, open to international invitations.</p>
+        <p>Festivals, venues, house concerts, weddings, corporate events, collaborations. Based in the UK, open to international invitations. Email or WhatsApp your date &amp; venue — replies within 48 hours.</p>
         <span class="contact-line"><a href="mailto:redeyezack@protonmail.com">redeyezack@protonmail.com</a></span>
         <span class="contact-line">WhatsApp: +44 7845 450242</span>
       </div>
       <div class="ask-card">
         <span class="ask-title">For sponsors &amp; backers</span>
-        <p>This is a grassroots, independently-funded tour. Open to sponsors and investors to support travel, production, and local collaborations along the way.</p>
+        <p>This is a grassroots, independently-funded tour. Currently raising <strong>£20,000</strong> to fund the next chapter:</p>
+        <ul class="funding-list">
+          <li>Recording &amp; Production</li>
+          <li>Touring — remaining legs</li>
+          <li>Content &amp; Promotion</li>
+        </ul>
+        <p>Open to sponsors and backers who want to be part of it — reply for a 15-minute call, no pitch deck required.</p>
         <span class="contact-line"><a href="mailto:redeyezack@protonmail.com">redeyezack@protonmail.com</a></span>
         <span class="contact-line"><a href="https://www.redeyezack.co.uk" target="_blank" rel="noopener">redeyezack.co.uk</a></span>
       </div>
