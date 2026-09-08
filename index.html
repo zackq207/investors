@@ -444,6 +444,34 @@
     margin-top: 0.3rem;
   }
 
+  .video-caption {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--accent-soft);
+  }
+
+  .video-embed {
+    position: relative;
+    width: 100%;
+    max-width: 480px;
+    aspect-ratio: 16 / 9;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    background: var(--surface-2);
+  }
+
+  .video-embed iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
   .contact-line a { color: var(--text); text-decoration-color: var(--border); }
 
   /* ---------- Footer ---------- */
@@ -579,6 +607,10 @@
       <span class="genre-tag">Acoustic</span>
     </div>
     <p class="lede">An all-original 30-song repertoire: 20 (Sketches &amp; Demos) already written, with 10 (Works In Progress) moving into full production with a UK producer now on board. "Secret Garden" releases <strong>October 16</strong>, with "Flying Free" following in <strong>December</strong>. First single already out: "The Purpose Of Existence," first in a planned trilogy written across Barcelona and Mumbai. Collaborations with traditional and ethnic instrumentalists and percussionists shape a sound built to connect with any audience, anywhere. Rights are handled properly from the outset — PRS royalty collection has been active for three years, with a handful of catalogue songs held back from release until their structures are finalised and registered.</p>
+    <span class="video-caption">▶ Preview — "The Purpose Of Existence"</span>
+    <div class="video-embed">
+      <iframe src="https://www.youtube.com/embed/ajqMi1sIgfE" title="&quot;The Purpose Of Existence&quot; — 1-minute preview" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
     <span class="contact-line">▶ <a href="https://www.youtube.com/playlist?list=PLs7n3ZrG858udgP5Ijplv2kA_Lodf2w2X" target="_blank" rel="noopener">Listen and watch the full "Acoustic Clips" playlist on YouTube</a></span>
   </section>
 
