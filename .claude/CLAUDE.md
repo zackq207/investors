@@ -49,6 +49,8 @@ Each student's Odoo CRM card is the single record of their progress (Angela is c
   Result: <scores, weak spots>
   Next: …
   ```
+- **Course topics are flexible:** a course has a list of topics that must all be done by its last lesson (Angela: Lesson 4). The order isn't fixed. The student's pace decides, so Zack moves topics between lessons as he goes. Each topic has a lesson and a status (Not started / Started / Done). A topic started in one lesson and continued in another shows in both lesson plans. Flag any topic not finished in a past lesson, and anything not done by the last lesson.
+- **The course notes page is the live plan.** Zack moves topics and ticks items there, and the page saves itself (Angela: `claude.ai/artifact/LASyTzFxfn9zbiUKm5K22B`). Z-Note notes are copies made from it: when asked to update Z-Note, read the page first and rebuild the dashboard and lesson notes from what it holds.
 - **Lesson plans and lesson notes:** every lesson uses the same sections, in this order, so Lesson 1, 2, 3… always match:
   1. Lesson plan (tick boxes)
   2. Results
