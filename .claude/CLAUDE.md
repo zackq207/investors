@@ -50,8 +50,9 @@ Build every new premium student the same way, using Angela's setup as the templa
 - **First homework email:** include the "Your 4 weeks" topic plan, taken from the course notes page, saying the order follows the student's pace.
 - **Feedback on homework within a day** of receiving it.
 - **Mid-trial check-in** in lesson 3: how the lessons and homework fit their week.
-- **Last lesson:** redo the quick check and show a progress report (before and after, what they can do now, next steps), with next-month options including a lighter one.
+- **Last lesson:** redo the quick check and show a progress report (before and after, what they can do now, next steps), with next-month options.
 - **Within 24 hours of the last lesson:** email the progress report and the next-month offer.
+- **Angela's price:** the test month was proposed at £65. Zack charged her €65 instead, after transfer-charge problems. She finds it expensive. Her continuation offer: weekly lessons at **€65 a month, keeping her introductory price**, paid by PayPal in euros.
 
 Each student's Odoo CRM card is the single record of their progress (Angela is card 223: `destinationenglish.co.uk/odoo/crm/223`). If it isn't on the card, it didn't happen.
 
