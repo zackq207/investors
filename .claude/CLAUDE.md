@@ -37,6 +37,14 @@ Zack can't read plain text dumps. Everything handed to him must be formatted for
 
 ## Students (Destination English)
 
+**Angela is the working model for Zack's premium service:** the 30-minute weekly conversation class plus extras outside the class:
+- a course plan with flexible topics, saved as a course notes page
+- interactive homework pages with grammar game links
+- quick checks and results
+- tidy lesson notes in Odoo and Z-Note
+
+Build every new premium student the same way, using Angela's setup as the template, and keep improving the template rather than one-off copies.
+
 Each student's Odoo CRM card is the single record of their progress (Angela is card 223: `destinationenglish.co.uk/odoo/crm/223`). If it isn't on the card, it didn't happen.
 
 - **Pipeline stages:** Enquiry → Level test → Test month → Regular → Paused / Finished.
