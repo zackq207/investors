@@ -49,7 +49,13 @@ Each student's Odoo CRM card is the single record of their progress (Angela is c
   Result: <scores, weak spots>
   Next: …
   ```
-- **Lesson plans and lesson notes:** homework and preparation aren't part of the lesson plan. Put them in a separate "Homework & preparation" section at the bottom of each lesson, after the plan, notes and after-lesson tasks.
+- **Lesson plans and lesson notes:** every lesson uses the same sections, in this order, so Lesson 1, 2, 3… always match:
+  1. Lesson plan (tick boxes)
+  2. Results
+  3. Still to cover
+  4. After the lesson (Odoo log note, what was written in Odoo)
+  5. **Homework & preparation**: a clearly marked, separate section at the end, never part of the lesson plan. It has three parts: Homework for the student (with the homework page link), Homework tasks, Preparation for me.
+  Keep every heading even when a section is empty, and write "None" or "Add after the lesson".
 - **One activity always set** for the student's next step (next lesson, or a homework check).
 - **Homework and lesson pages** go on the website as `destinationenglish.co.uk/student/...` pages, linked from the lesson's log note. Don't give students claude.ai links or emailed PDFs.
 - **Z-Note:** one "Students" folder, one short note per student. The note holds the link to their Odoo card and Zack's private thoughts only (teaching ideas, how they're feeling, what to try next). Never keep progress, scores or homework status in Z-Note.
