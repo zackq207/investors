@@ -33,6 +33,7 @@ Zack can't read plain text dumps. Everything handed to him must be formatted for
 - Never hand over `.txt` files, raw copied text, `[ ]` / `[x]` checklists or log output. Give a formatted page (HTML artifact), a Z-Note note (rich HTML), a doc, or formatted chat text.
 - Notes to paste into Odoo or Z-Note must paste as formatted text (headings, bullets, tick boxes). If something can only be copied as plain text, don't offer it. Give a link to the formatted version instead.
 - Copy buttons on pages copy formatted text only, with no plain-text fallback.
+- Any note (Z-Note or Odoo) that relates to an HTML artifact starts with a clickable link to it, before anything else. Use a short, clear link text, e.g. "📘 Open Angela's course notes", not a bare URL. List every related artifact there, one per line.
 
 ## Students (Destination English)
 
