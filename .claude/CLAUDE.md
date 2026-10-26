@@ -18,3 +18,8 @@ Standing rules for VA (virtual assistant) work on Zack's email, docs and message
 - The India trip (winter 2026–27) is postponed. Don't say Zack will be in India, Goa or Pune this winter.
 - Zack is available for gigs in the UK from 1 November 2026. Gig drafts end with: "I'm available from 1 November onwards."
 - Mentioning past folklore festivals in Morocco, Turkey, India and Vietnam is fine.
+
+## Where VA work is kept
+
+- Z-Note (Zack's own notes app, source in `zackq207/z-note`) holds VA folders and artifacts: campaign plans, checklists, drafts and summaries.
+- Z-Note's notes live on Zack's Mac (`~/Library/Application Support/Z-Note/znote-data/`), not in the repo. A cloud session can't write them directly, so hand work over in a form Zack can drop into Z-Note, and say where it should go.
