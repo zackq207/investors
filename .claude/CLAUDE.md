@@ -12,3 +12,9 @@ Standing rules for VA (virtual assistant) work on Zack's email, docs and message
 - When asked to fix links, check **all** drafts, not just the one mentioned.
 - Leave quoted text from earlier messages alone in reply drafts unless asked. Editing a reply draft through the Gmail connector can detach it from its thread and strip images from the quoted part. Flag these links to Zack instead.
 - Check the draft has no attachments before updating it. The Gmail connector drops attachments that aren't re-sent with the update.
+
+## Current facts (keep emails consistent with these)
+
+- The India trip (winter 2026–27) is postponed. Don't say Zack will be in India, Goa or Pune this winter.
+- Zack is available for gigs in the UK from 1 November 2026. Gig drafts end with: "I'm available from 1 November onwards."
+- Mentioning past folklore festivals in Morocco, Turkey, India and Vietnam is fine.
