@@ -53,6 +53,12 @@ Build every new premium student the same way, using Angela's setup as the templa
 3. **Two days later, 08:00 (Wednesday for a Monday lesson): homework email**, scheduled in Gmail. Subject: "Your homework for Lesson N+1 – <topics>". It has a short rule reminder, the homework written into the email, grammar game links, how to send answers back, and a promise of corrections within a day.
 4. **Corrections within a day** of the answers arriving.
 
+**Homework and preparation pages (interactive HTML):**
+- **The email links to the page.** The homework email is short: a button that opens the page, a line on what's in it, and how to send answers. Never put the exercises in the email itself, as blanks to fill.
+- **Two clearly separate parts.** **Homework** practises the lesson just taught. **Preparation for the next lesson** gets the student ready for the next topics (for example, reading aloud, or a first look at a new structure).
+- **Every exercise starts with a worked example,** filled in and marked "Example", so it's always clear what to do. Examples don't count in the score.
+- **Keep the student's link working.** The aim is the student's own panel on the website (Odoo portal login + a members-only eLearning course). Until that exists, a claude.ai page is only reachable if Zack shares it with "Anyone with the link".
+
 **Trial month: win them as an ongoing student.** A test month is a trial, and price matters to students like Angela, so every contact should show the value:
 - **Never send homework late:** late homework means homework not done.
 - **First homework email:** include the "Your 4 weeks" topic plan, taken from the course notes page, saying the order follows the student's pace.
