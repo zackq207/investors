@@ -45,14 +45,20 @@ Zack can't read plain text dumps. Everything handed to him must be formatted for
 
 Build every new premium student the same way, using Angela's setup as the template, and keep improving the template rather than one-off copies.
 
+**After every lesson (standard for every student):**
+1. **Same day: "Summary of today's lesson" email.** Subject: "Summary of today's lesson – Lesson N, <day date>". It covers what we did, each topic with its key rule and examples, praise for something specific, and what's next (homework arriving Wednesday, the next lesson's date, time and topics). Homework is not included.
+2. **Same day:** a log note on the Odoo card, and the course notes page ticked.
+3. **Two days later, 08:00 (Wednesday for a Monday lesson): homework email**, scheduled in Gmail. Subject: "Your homework for Lesson N+1 – <topics>". It has a short rule reminder, the homework written into the email, grammar game links, how to send answers back, and a promise of corrections within a day.
+4. **Corrections within a day** of the answers arriving.
+
 **Trial month: win them as an ongoing student.** A test month is a trial, and price matters to students like Angela, so every contact should show the value:
-- **Homework email by Wednesday 08:00** after a Monday lesson, scheduled in Gmail. It holds a short lesson summary, the homework written into the email, grammar game links, and how to send answers back. Late homework means homework not done.
+- **Never send homework late:** late homework means homework not done.
 - **First homework email:** include the "Your 4 weeks" topic plan, taken from the course notes page, saying the order follows the student's pace.
 - **Feedback on homework within a day** of receiving it.
 - **Mid-trial check-in** in lesson 3: how the lessons and homework fit their week.
 - **Last lesson:** redo the quick check and show a progress report (before and after, what they can do now, next steps), with next-month options.
 - **Within 24 hours of the last lesson:** email the progress report and the next-month offer.
-- **Angela's price:** the test month was proposed at £65. Zack charged her €65 instead, after transfer-charge problems. She finds it expensive. Her continuation offer: weekly lessons at **€65 a month, keeping her introductory price**, paid by PayPal in euros.
+- **Angela's price:** the test month was proposed at £65. Zack charged her €65 instead, after transfer-charge problems. She finds it expensive. Her continuation offer: weekly lessons at **€65 a month, keeping her introductory price for as long as she continues**, paid by PayPal in euros.
 
 Each student's Odoo CRM card is the single record of their progress (Angela is card 223: `destinationenglish.co.uk/odoo/crm/223`). If it isn't on the card, it didn't happen.
 
@@ -72,7 +78,7 @@ Each student's Odoo CRM card is the single record of their progress (Angela is c
   1. Lesson plan (tick boxes)
   2. Results
   3. Still to cover
-  4. After the lesson (Odoo log note, what was written in Odoo)
+  4. After the lesson (summary email, Odoo log note, what was written in Odoo)
   5. **Homework & preparation**: a clearly marked, separate section at the end, never part of the lesson plan. It has three parts: Homework for the student (with the homework page link), Homework tasks, Preparation for me.
   Keep every heading even when a section is empty, and write "None" or "Add after the lesson".
 - **One activity always set** for the student's next step (next lesson, or a homework check).
