@@ -45,6 +45,14 @@ Zack can't read plain text dumps. Everything handed to him must be formatted for
 
 Build every new premium student the same way, using Angela's setup as the template, and keep improving the template rather than one-off copies.
 
+**Trial month: win them as an ongoing student.** A test month is a trial, and price matters to students like Angela, so every contact should show the value:
+- **Homework email by Wednesday 08:00** after a Monday lesson, scheduled in Gmail. It holds a short lesson summary, the homework written into the email, grammar game links, and how to send answers back. Late homework means homework not done.
+- **First homework email:** include the "Your 4 weeks" topic plan, taken from the course notes page, saying the order follows the student's pace.
+- **Feedback on homework within a day** of receiving it.
+- **Mid-trial check-in** in lesson 3: how the lessons and homework fit their week.
+- **Last lesson:** redo the quick check and show a progress report (before and after, what they can do now, next steps), with next-month options including a lighter one.
+- **Within 24 hours of the last lesson:** email the progress report and the next-month offer.
+
 Each student's Odoo CRM card is the single record of their progress (Angela is card 223: `destinationenglish.co.uk/odoo/crm/223`). If it isn't on the card, it didn't happen.
 
 - **Pipeline stages:** Enquiry → Level test → Test month → Regular → Paused / Finished.
