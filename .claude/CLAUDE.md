@@ -44,6 +44,8 @@ Zack can't read plain text dumps. Everything handed to him must be formatted for
 - tidy lesson notes in Odoo and Z-Note
 
 Build every new premium student the same way, using Angela's setup as the template, and keep improving the template rather than one-off copies.
+- **Premium Service Playbook** (`claude.ai/artifact/2PZ2r7wu3YPpQmakUxr1Q7`): what the student gets, the routine after each lesson, the trial month, and email templates (lesson summary, homework, 4-week plan, corrections, progress report and offer). Write student emails from these templates, and update the playbook when the routine changes.
+- **Premium Course Template** (`claude.ai/artifact/9eokBDC6vwBAr2ZTAc65fy`): the master course notes page. It never saves. For a new student, copy it into their own self-saving page with their details.
 
 **After every lesson (standard for every student):**
 1. **Same day: "Summary of today's lesson" email.** Subject: "Summary of today's lesson – Lesson N, <day date>". It covers what we did, each topic with its key rule and examples, praise for something specific, and what's next (homework arriving Wednesday, the next lesson's date, time and topics). Homework is not included.
