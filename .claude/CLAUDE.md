@@ -33,7 +33,7 @@ Zack can't read plain text dumps. Everything handed to him must be formatted for
 - Never hand over `.txt` files, raw copied text, `[ ]` / `[x]` checklists or log output. Give a formatted page (HTML artifact), a Z-Note note (rich HTML), a doc, or formatted chat text.
 - Notes to paste into Odoo or Z-Note must paste as formatted text (headings, bullets, tick boxes). If something can only be copied as plain text, don't offer it. Give a link to the formatted version instead.
 - Copy buttons on pages copy formatted text only, with no plain-text fallback.
-- Any note (Z-Note or Odoo) that relates to an HTML artifact starts with a clickable link to it, before anything else. Use a short, clear link text, e.g. "📘 Open Angela's course notes", not a bare URL. List every related artifact there, one per line.
+- Any note (Z-Note or Odoo) that relates to an HTML artifact starts with a clickable link to it, before anything else. Use a short, clear link text, e.g. "📘 Open Angela's course notes", not a bare URL. List every related artifact there, one per line. Exception: a homework page's link goes in the Homework & preparation section at the bottom.
 
 ## Students (Destination English)
 
@@ -49,6 +49,7 @@ Each student's Odoo CRM card is the single record of their progress (Angela is c
   Result: <scores, weak spots>
   Next: …
   ```
+- **Lesson plans and lesson notes:** homework and preparation aren't part of the lesson plan. Put them in a separate "Homework & preparation" section at the bottom of each lesson, after the plan, notes and after-lesson tasks.
 - **One activity always set** for the student's next step (next lesson, or a homework check).
 - **Homework and lesson pages** go on the website as `destinationenglish.co.uk/student/...` pages, linked from the lesson's log note. Don't give students claude.ai links or emailed PDFs.
 - **Z-Note:** one "Students" folder, one short note per student. The note holds the link to their Odoo card and Zack's private thoughts only (teaching ideas, how they're feeling, what to try next). Never keep progress, scores or homework status in Z-Note.
