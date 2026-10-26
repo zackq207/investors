@@ -24,3 +24,23 @@ Standing rules for VA (virtual assistant) work on Zack's email, docs and message
 - Z-Note (Zack's own notes app, source in `zackq207/z-note`) holds VA folders and artifacts: campaign plans, checklists, drafts and summaries.
 - Z-Note's notes live on Zack's Mac (`~/Library/Application Support/Z-Note/znote-data/`), not in the repo. A cloud session can't write them directly, so hand work over in a form Zack can drop into Z-Note, and say where it should go.
 - Mailchimp footer: keep the current postal address (London postcode). Zack has decided this; don't suggest changing it or paying for a PO box.
+
+## Students (Destination English)
+
+Each student's Odoo CRM card is the single record of their progress (Angela is card 223: `destinationenglish.co.uk/odoo/crm/223`). If it isn't on the card, it didn't happen.
+
+- **Pipeline stages:** Enquiry → Level test → Test month → Regular → Paused / Finished.
+- **Tags:** level (e.g. Pre-Int) and lesson day.
+- **One log note per lesson** on the card, in this format:
+  ```
+  Lesson N – <date>
+  Covered: …
+  Homework: <destinationenglish.co.uk/student/... link>
+  Result: <scores, weak spots>
+  Next: …
+  ```
+- **One activity always set** for the student's next step (next lesson, or a homework check).
+- **Homework and lesson pages** go on the website as `destinationenglish.co.uk/student/...` pages, linked from the lesson's log note. Don't give students claude.ai links or emailed PDFs.
+- **Z-Note:** one "Students" folder, one short note per student. The note holds the link to their Odoo card and Zack's private thoughts only (teaching ideas, how they're feeling, what to try next). Never keep progress, scores or homework status in Z-Note.
+- **Where to do the work:** student updates need Odoo, the website and Z-Note, so do them in a session on Zack's Mac. A cloud session can't reach them. If you're in a cloud session, say so at the start, do only what's possible, and give Zack a ready-to-paste log note for the card.
+- **End of every student task:** confirm what was logged on the card, or list exactly what still needs logging.
