@@ -58,6 +58,9 @@ Each student's Odoo CRM card is the single record of their progress (Angela is c
   Keep every heading even when a section is empty, and write "None" or "Add after the lesson".
 - **One activity always set** for the student's next step (next lesson, or a homework check).
 - **Homework and lesson pages** go on the website as `destinationenglish.co.uk/student/...` pages, linked from the lesson's log note. Don't give students claude.ai links or emailed PDFs.
-- **Z-Note:** one "Students" folder, one short note per student. The note holds the link to their Odoo card and Zack's private thoughts only (teaching ideas, how they're feeling, what to try next). Never keep progress, scores or homework status in Z-Note.
+- **Z-Note:** each student has a folder (Angela: `Destination English / Angela`) holding:
+  - **"<Name> – Master dashboard"** (pinned): the course notes link at the top, the student's details, an overview table of all lessons, then every lesson in full.
+  - **"<Name> – Lesson N (<date>)"**: one note per lesson, with the course notes link at the top and the lesson in exactly the same 5-section layout as the dashboard and the course page.
+  - Generate all of them from the same content so they never disagree, and update the dashboard whenever a lesson note changes.
 - **Where to do the work:** student updates need Odoo, the website and Z-Note, so do them in a session on Zack's Mac. A cloud session can't reach them. If you're in a cloud session, say so at the start, do only what's possible, and give Zack a ready-to-paste log note for the card, formatted (see Formatting for Zack).
 - **End of every student task:** confirm what was logged on the card, or list exactly what still needs logging.
