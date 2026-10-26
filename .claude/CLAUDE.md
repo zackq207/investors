@@ -23,3 +23,4 @@ Standing rules for VA (virtual assistant) work on Zack's email, docs and message
 
 - Z-Note (Zack's own notes app, source in `zackq207/z-note`) holds VA folders and artifacts: campaign plans, checklists, drafts and summaries.
 - Z-Note's notes live on Zack's Mac (`~/Library/Application Support/Z-Note/znote-data/`), not in the repo. A cloud session can't write them directly, so hand work over in a form Zack can drop into Z-Note, and say where it should go.
+- Mailchimp footer: keep the current postal address (London postcode). Zack has decided this; don't suggest changing it or paying for a PO box.
