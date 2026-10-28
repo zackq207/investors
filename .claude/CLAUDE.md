@@ -4,7 +4,11 @@ Standing rules for VA (virtual assistant) work on Zack's email, docs and message
 
 ## Links in emails and drafts
 
-- Never use Google redirect links (`https://www.google.com/url?q=...&source=gmail&ust=...&sa=E`). Replace each one with the direct URL it points to.
+- **No `google.com` in any URL, ever.** That covers Google redirect links (`https://www.google.com/url?q=...&source=gmail&ust=...&sa=E`) and Google Drive links (`drive.google.com/...`). Replace redirects with the direct URL they point to. For files, link a copy on Zack's own sites instead of Drive, e.g. the EPK at `https://investors.redeyezack.co.uk/RedEyeZack_EPK_2026-10.pdf`. If a file only exists on Drive, ask Zack where to host it rather than sending a Drive link.
+- **Don't put links into drafts through the Gmail connector.** Tested 28 Oct 2026: `create_draft` and `update_draft` rewrite every link into a `google.com/url` redirect when saving, in both the HTML and plain-text parts. That includes bare text like `redeyezack.co.uk/x`; a link without `https:` becomes a dead `javascript:void(0)`. The `get_draft` view shows these redirects even on links Zack added by hand, so check the `RAW` format before deciding a draft is broken. To get clean, clickable links into an email, do one of these:
+  - Zack adds the links himself in Gmail: select the text, press Ctrl+K (⌘K on Mac) and paste the direct URL.
+  - Give Zack a page with the email and a "Copy email" button that copies rich HTML, which he pastes into the draft in Gmail. Gmail keeps the direct links when the email is pasted in like this.
+  - If a draft already has redirect links, give Zack the list of direct URLs to put back. Don't save the draft through the connector again.
 - Keep every link as short as possible:
   - link to `https://`, and drop `www.` where the site works without it
   - show the short form as the link text, e.g. `destinationenglish.co.uk/appointment/2`
