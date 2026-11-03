@@ -50,9 +50,9 @@ Build every new premium student the same way, using Angela's setup as the templa
 **After every lesson (standard for every student):**
 1. **Same day: "Summary of today's lesson" email.** Subject: "Summary of today's lesson – Lesson N, <day date>". It covers what we did, each topic with its key rule and examples, praise for something specific, and what's next (homework arriving Wednesday, the next lesson's date, time and topics). Homework is not included.
 2. **Same day:** a log note on the Odoo card, and the course notes page ticked.
-   **Reminders until the summary is sent:** Zack needs his phone to keep reminding him every hour until the summary is sent that evening. For every student, set up both:
+   **Reminders until the summary is sent:** Zack needs his phone to keep reminding him every hour until the summary is sent that evening. For every student, set up:
    - a weekly **Google Calendar** event on the lesson day, "⏰ Send <Name>'s lesson summary (tonight)", with pop-ups every hour from the end of the lesson to 20:00 (Angela's: Mondays, 16:00–20:00 UK)
-   - a **scheduled task** that runs hourly that evening, checks Gmail Sent for the summary, and sends a phone notification only if it hasn't gone (Angela's: "Lesson summary reminder (Angela, Mondays)", 16:05–22:05 UK)
+   - A scheduled task that checks Gmail Sent would be better, but Zack's account can't give scheduled tasks Gmail access, so it would remind him even after sending. Angela's ("Lesson summary reminder (Angela, Mondays)") is switched off. Turn it back on only if scheduled tasks gain Gmail access.
 3. **Two days later, 08:00 (Wednesday for a Monday lesson): homework email**, scheduled in Gmail. Subject: "Your homework for Lesson N+1 – <topics>". It has a short rule reminder, the homework written into the email, grammar game links, how to send answers back, and a promise of corrections within a day.
 4. **Corrections within a day** of the answers arriving.
 
